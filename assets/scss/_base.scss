@@ -13,9 +13,15 @@ $rubik: "Rubik", sans-serif;
   list-style: none;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
+  transition: .3s ease;
+}
+
+html{
+  scroll-behavior: smooth!important;
 }
 
 body {
+  scroll-behavior: smooth!important;
   background-color: #222222;
 }
 
