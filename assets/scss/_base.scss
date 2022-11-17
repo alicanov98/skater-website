@@ -1,0 +1,47 @@
+// Google fonts
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+// Variable
+$rubik: "Rubik", sans-serif;
+
+// Reset codes
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: #222222;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// 1200px
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+// 992px
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+// 560px
+@media (max-width: 560px) {
+  .container {
+    max-width: 530px;
+  }
+}

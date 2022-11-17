@@ -1,0 +1,1151 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: #222222;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 560px) {
+  .container {
+    max-width: 530px;
+  }
+}
+.header {
+  background: #222222;
+  padding: 0 16px;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.header .container .navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+.header .container .navBar .logo a {
+  color: #ff8b00;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+}
+.header .container .navBar .navList {
+  display: flex;
+  align-items: center;
+}
+.header .container .navBar .navList .navItem a {
+  margin: 0 15px;
+  padding: 20px 0px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  font-family: "Rubik", sans-serif;
+}
+.header .container .navBar .navList .navItem a:hover {
+  color: #ff8b00;
+}
+.header .container .navBar .navList .navItem a .downArrow {
+  font-size: 10px;
+  transform: translateY(-2px) translateX(2px);
+}
+.header .container .navBar .navList .navItem a.active {
+  color: #ff8b00;
+}
+
+/* --------------------------- START HOME SECTION --------------------------- */
+.home {
+  background-image: url(../images/homeBg.webp);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 577px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home .overlay {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 577px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.home .container .homeContent {
+  position: relative;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 665px;
+  text-align: center;
+}
+.home .container .homeContent h1 {
+  font-size: 72px;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 8px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+.home .container .homeContent p {
+  margin: 0 80px 48px 80px;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+.home .container .homeContent a {
+  width: 135px;
+  margin: 0 auto;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 4px;
+  font-family: "Rubik", sans-serif;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+.home .container .homeContent a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.home .container .homeContent a:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 139, 0, 0.25);
+}
+
+/* ---------------------------- END HOME SECTION ---------------------------- */
+/* ------------------------- START SERVICES SECTION ------------------------- */
+.services {
+  position: relative;
+  padding: 112px 0;
+}
+.services .container {
+  padding: 0 15px;
+}
+.services .container .servicesTitle {
+  font-size: 48px;
+  font-weight: 400;
+  color: #ff8b00;
+  width: 665px;
+  margin: 0 auto 8px auto;
+  text-align: center;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+.services .container .servicesInfo {
+  width: 665px;
+  color: #939393;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  margin: 0 auto 16px auto;
+  text-align: center;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+.services .container .cardBox {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.services .container .cardBox .boxTop,
+.services .container .cardBox .boxBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.services .container .cardBox .boxTop .serviceCard,
+.services .container .cardBox .boxBottom .serviceCard {
+  width: 350px;
+  height: 222px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+.services .container .cardBox .boxTop .serviceCard .cardImg,
+.services .container .cardBox .boxBottom .serviceCard .cardImg {
+  position: relative;
+}
+.services .container .cardBox .boxTop .serviceCard .cardImg::before,
+.services .container .cardBox .boxBottom .serviceCard .cardImg::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: 0;
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333333;
+}
+.services .container .cardBox .boxTop .serviceCard .cardImg img,
+.services .container .cardBox .boxBottom .serviceCard .cardImg img {
+  width: 50px;
+  transform: rotate(270deg);
+}
+.services .container .cardBox .boxTop .serviceCard .cardInfo,
+.services .container .cardBox .boxBottom .serviceCard .cardInfo {
+  margin-top: 32px;
+}
+.services .container .cardBox .boxTop .serviceCard .cardInfo h3,
+.services .container .cardBox .boxBottom .serviceCard .cardInfo h3 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.services .container .cardBox .boxTop .serviceCard .cardInfo p,
+.services .container .cardBox .boxBottom .serviceCard .cardInfo p {
+  color: #939393;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.services .container .cardBox .boxBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .servicesBottom {
+  padding: 112px 0;
+}
+.services .servicesBottom .carding {
+  width: 100%;
+  display: flex;
+}
+.services .servicesBottom .carding .cardImage {
+  width: 50%;
+}
+.services .servicesBottom .carding .cardImage img {
+  width: 100%;
+  height: 100%;
+}
+.services .servicesBottom .carding .cardInfoTab {
+  width: 50%;
+  padding: 48px;
+}
+.services .servicesBottom .carding .cardInfoTab .cardTitle {
+  color: #ff8b00;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.services .servicesBottom .carding .cardInfoTab .cardDescInfo,
+.services .servicesBottom .carding .cardInfoTab .cardDesc {
+  color: #939393;
+  margin-bottom: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: left;
+  font-family: "Rubik", sans-serif;
+}
+.services .servicesBottom .carding .cardInfoTab .cardList .cardListItem {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #939393;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+.services .servicesBottom .carding .cardInfoTab .cardList .cardListItem::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #ff8b00;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* -------------------------- END SERVICES SECTION -------------------------- */
+.aboutSection {
+  width: 100%;
+  padding: 112px 0;
+}
+.aboutSection .container {
+  padding: 0 15px;
+}
+.aboutSection .container .image {
+  width: 100%;
+  margin: 0 -15px 24px;
+}
+.aboutSection .container .image .video img {
+  width: 100%;
+  height: auto;
+}
+.aboutSection .container .aboutList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: 24px;
+}
+.aboutSection .container .aboutList .count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.aboutSection .container .aboutList .count .number {
+  position: relative;
+  color: #ff8b00;
+  font-size: 64px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.aboutSection .container .aboutList .count .number span {
+  font-family: "Rubik", sans-serif;
+}
+.aboutSection .container .aboutList .count .number::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.3);
+}
+.aboutSection .container .aboutList .count .caption {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  font-family: "Rubik", sans-serif;
+}
+
+.team {
+  width: 100%;
+  padding: 112px 0;
+}
+.team .container {
+  padding: 0 15px;
+}
+.team .container .blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.team .container .blog p {
+  width: 55%;
+}
+.team .container .blog h2 {
+  color: #ff8b00;
+  font-size: 48px;
+  font-weight: 400;
+}
+.team .container .blog p {
+  color: #939393;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  font-family: "Rubik", sans-serif;
+}
+.team .container .cardBox {
+  display: flex;
+}
+.team .container .cardBox .card {
+  width: 349px;
+  height: 304px;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: #333333;
+  border: #939393;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.team .container .cardBox .card:hover {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+.team .container .cardBox .card .cardItem img {
+  width: 130px;
+  height: 130px;
+  margin: 0 0 16px;
+  border-radius: 50%;
+}
+.team .container .cardBox .card .cardItem h6 {
+  color: #ff8b00;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  margin: 0 0 8px;
+}
+.team .container .cardBox .card .cardItem p {
+  font-size: 12px;
+  font-family: "Rubik", sans-serif;
+  color: #b8b8b8;
+  margin: 0 0 16px;
+}
+.team .container .cardBox .card .cardItem .social {
+  display: flex;
+  justify-content: center;
+}
+.team .container .cardBox .card .cardItem .social .socialItem {
+  display: flex;
+  padding: 0 2px;
+}
+.team .container .cardBox .card .cardItem .social .socialItem a {
+  width: 30px;
+  height: 30px;
+  background-color: #ff8b00;
+  border: 2px #ff8b00 solid;
+  text-align: center;
+  border-radius: 5px;
+}
+.team .container .cardBox .card .cardItem .social .socialItem a i {
+  color: #ffffff;
+}
+.team .container .cardBox .card .cardItem .social .socialItem:hover {
+  background-color: #333333;
+}
+.team .container .cardBox .card .cardItem .social .socialItem:hover a:hover {
+  background-color: #333333;
+}
+.team .container .cardBox .card .cardItem .social .socialItem:hover a:hover i {
+  color: #222222;
+}
+
+.session {
+  width: 100%;
+  padding: 112px 0;
+}
+.session .container {
+  padding: 0 15px;
+}
+.session .container .sessionTop {
+  width: 100%;
+  margin: 0 -15px 48px;
+  display: flex;
+}
+.session .container .sessionTop .sessionTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 15px;
+}
+.session .container .sessionTop .sessionTitle h2 {
+  font-size: 48px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #ff8b00;
+  margin: 0 0 8px;
+}
+.session .container .sessionTop .sessionTitle p {
+  width: 56%;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  margin: 0 0 16px;
+  color: #939393;
+}
+.session .container .sessionBottom {
+  text-align: center;
+  width: 100%;
+}
+.session .container .sessionBottom .boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.session .container .sessionBottom .boxContainer .cardBox {
+  padding: 0 15px;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card {
+  padding: 30px;
+  background-color: #333333;
+  width: 330px;
+  color: #939393;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card h3 {
+  font-size: 28px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 0 0 8px;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card .content {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  color: #cccccc;
+  padding: 0 0 24px;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card .content .nuber {
+  font-size: 48px;
+  font-family: "Rubik", sans-serif;
+  color: #ff8b00;
+  margin-left: 10px;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card .list {
+  color: #939393;
+  margin: 0 0 48px;
+  height: 248px;
+  text-align: start;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card .list .item {
+  height: 24px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #939393;
+  line-height: 1.5;
+  margin: 20px;
+  padding-left: 35px;
+  position: relative;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card .list .item::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  font-style: solid;
+  position: absolute;
+  left: 0;
+  color: #71bc42;
+  top: -0.3rem;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card .buttonYelow {
+  margin: 0 0 16px;
+  color: #ff8b00;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card .buttonYelow a {
+  color: #ffffff;
+  background-color: #ff8b00;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  border: 1px solid #ff8b00;
+  border-radius: 0.25rem;
+  text-align: center;
+  line-height: 24px;
+  transition: 0.3s all ease;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card .buttonYelow a:hover {
+  color: #fff;
+  background-color: #d97600;
+  border-color: #cc6f00;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card .button {
+  margin: 0 0 16px;
+  color: #939393;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card .button a {
+  color: #ffffff;
+  background-color: #6c757d;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+  text-align: center;
+  line-height: 24px;
+  transition: 0.3s all ease;
+}
+.session .container .sessionBottom .boxContainer .cardBox .card .button a:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+.session .container .ask {
+  width: 100%;
+  height: 270px;
+  padding: 112px 0;
+}
+.session .container .ask .askTitle {
+  padding: 0 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.session .container .ask .askTitle h2 {
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  margin: 0 0 8px;
+  color: #ff8b00;
+  font-weight: 400;
+}
+.session .container .leftRight {
+  width: 100%;
+  display: flex;
+}
+.session .container .leftRight .left {
+  width: 50%;
+  padding: 0 15px;
+}
+.session .container .leftRight .left .leftItem {
+  padding: 0 0 48px;
+}
+.session .container .leftRight .left .leftItem h3 {
+  color: #ff8b00;
+  margin: 0 0 24px;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+.session .container .leftRight .left .leftItem p {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #939393;
+}
+.session .container .leftRight .right {
+  width: 50%;
+  padding: 0 15px;
+}
+.session .container .leftRight .right .rightItem {
+  padding: 0 0 48px;
+}
+.session .container .leftRight .right .rightItem h3 {
+  color: #ff8b00;
+  margin: 0 0 24px;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+.session .container .leftRight .right .rightItem p {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #939393;
+}
+
+.testimonial {
+  width: 100%;
+  padding: 112px 0;
+}
+.testimonial .container .row {
+  text-align: center;
+}
+.testimonial .container .row .testimonial-title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #ff8b00;
+  margin: 0 0 56px;
+}
+.testimonial .container .row .sectionCardBox {
+  width: 100%;
+  display: flex;
+}
+.testimonial .container .row .sectionCardBox .card {
+  padding: 20px;
+  width: 370px;
+}
+.testimonial .container .row .sectionCardBox .card .cardImg {
+  padding-top: 20px;
+  margin-bottom: 16px;
+}
+.testimonial .container .row .sectionCardBox .card .cardImg img {
+  width: 60px;
+  margin: 0 auto;
+  height: 60px;
+  border-radius: 50%;
+}
+.testimonial .container .row .sectionCardBox .card h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.testimonial .container .row .sectionCardBox .card .cardContent {
+  width: 330px;
+  height: 351px;
+  background: #333;
+  padding: 30px;
+  font-style: italic;
+  font-size: 20px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 24px;
+  line-height: 1.7;
+  font-weight: 400;
+  text-align: center;
+}
+.testimonial .container .row .sectionCardBox .card .cardContent p {
+  margin-bottom: 16px;
+}
+
+.blog {
+  width: 100%;
+  padding: 112px 0;
+}
+.blog .container .title {
+  margin: 0 0 48px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blog .container .title p {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #b8b8b8;
+}
+.blog .container .title h2 {
+  margin: 0 0 8px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  color: #ff8b00;
+}
+.blog .container .cardBox {
+  display: flex;
+}
+.blog .container .cardBox .card {
+  padding: 0 15px;
+  width: 540px;
+  height: 593px;
+}
+.blog .container .cardBox .card a img {
+  border-radius: 4px;
+  width: 100%;
+  height: 360px;
+  margin-bottom: 15px;
+}
+.blog .container .cardBox .card a h2 {
+  margin: 0 0 8px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  color: #ff8b00;
+  transition: 0.3s ease all;
+}
+.blog .container .cardBox .card a h2:hover {
+  color: #cc6f00;
+}
+.blog .container .cardBox .card p {
+  font-family: "Rubik", sans-serif;
+  font-size: 12.8px;
+  font-weight: 400;
+  color: #6c757d;
+  margin: 0 0 16px;
+}
+.blog .container .cardBox .card p .by {
+  margin-right: 8px;
+}
+.blog .container .cardBox .card p a {
+  color: #000;
+  border-bottom: 1px dotted #ccc;
+  font-size: 12.8px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.blog .container .cardBox .card p a:hover {
+  color: #cc6f00;
+}
+.blog .container .cardBox .card .text {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #939393;
+  margin: 0 0 16px;
+}
+.blog .container .cardBox .card .read {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  color: #ff8b00;
+}
+.blog .container .cardBox .card .read:hover {
+  color: #cc6f00;
+}
+
+.contact {
+  width: 100%;
+  padding: 112px 0;
+}
+.contact .container .title {
+  margin: 0 0 48px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .container .title p {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #b8b8b8;
+}
+.contact .container .title h2 {
+  margin: 0 0 8px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  color: #ff8b00;
+}
+.contact .container .cardBox {
+  width: 100%;
+  margin: 0 -15px;
+  color: #939393;
+  display: flex;
+}
+.contact .container .cardBox .formCon {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .container .cardBox .formCon input {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.contact .container .cardBox .formCon .first {
+  margin-bottom: 16px;
+  display: flex;
+}
+.contact .container .cardBox .formCon .first .firstname,
+.contact .container .cardBox .formCon .first .surname {
+  padding: 0 15px;
+  border-radius: 4px;
+  border: #333333 solid 1px;
+  background-color: #333333;
+  width: 255px;
+  height: 55px;
+  padding: 6px 12px;
+}
+.contact .container .cardBox .formCon .first .firstname:nth-child(1),
+.contact .container .cardBox .formCon .first .surname:nth-child(1) {
+  margin-right: 30px;
+}
+.contact .container .cardBox .formCon .first .firstname::-webkit-input-placeholder,
+.contact .container .cardBox .formCon .first .surname::-webkit-input-placeholder {
+  color: #939393;
+  font-size: 18px;
+}
+.contact .container .cardBox .formCon .emailAdress {
+  padding: 0 15px;
+}
+.contact .container .cardBox .formCon .emailAdress .adress {
+  margin-bottom: 15px;
+}
+.contact .container .cardBox .formCon .emailAdress .adress input {
+  border-radius: 4px;
+  border: #333333 solid 1px;
+  background-color: #333333;
+  width: 540px;
+  height: 55px;
+  padding: 6px 12px;
+}
+.contact .container .cardBox .formCon .emailAdress .adress input::-webkit-input-placeholder {
+  color: #939393;
+  font-size: 18px;
+}
+.contact .container .cardBox .formCon .youmMessage {
+  padding: 0 15px;
+}
+.contact .container .cardBox .formCon .youmMessage .message {
+  margin-bottom: 15px;
+}
+.contact .container .cardBox .formCon .youmMessage .message .area {
+  border-radius: 4px;
+  border: #333333 solid 1px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  width: 100%;
+  height: 100%;
+  padding: 6px 12px;
+  min-height: 243px;
+  min-width: 543px;
+  max-width: 543px;
+  max-height: 243px;
+}
+.contact .container .cardBox .formCon .youmMessage .message .area::-webkit-input-placeholder {
+  color: #939393;
+  font-size: 18px;
+}
+.contact .container .cardBox .formCon .buttom {
+  padding: 0 15px;
+  margin: 0 0 0 285px;
+}
+.contact .container .cardBox .formCon .buttom button {
+  background-color: #ff8b00;
+  border-radius: 4px;
+  border: 1px solid #ff8b00;
+  width: 255px;
+  height: 58px;
+  padding: 16px 48px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  transition: 0.3s all ease;
+}
+.contact .container .cardBox .formCon .buttom button:hover {
+  background-color: #cc6f00;
+}
+.contact .container .cardBox .cardLeft {
+  width: 50%;
+  margin: 0 0 0 190px;
+  padding: 0 15px;
+}
+.contact .container .cardBox .cardLeft .left {
+  margin: 0 0 16px;
+}
+.contact .container .cardBox .cardLeft .left h2 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ff8b00;
+  margin: 0 0 8px;
+}
+.contact .container .cardBox .cardLeft .left p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  color: #939393;
+  margin: 0 0 16px;
+  line-height: 1.7;
+}
+.contact .container .cardBox .cardLeft .left .get {
+  margin: 0 0 16px;
+}
+.contact .container .cardBox .cardLeft .left .get a {
+  width: 112px;
+  height: 58px;
+  border-radius: 4px;
+  border: 1px solid #ff8b00;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  background-color: #ff8b00;
+  padding: 8px 12px;
+  transition: 0.3s all ease;
+}
+.contact .container .cardBox .cardLeft .left .get a:hover {
+  background-color: #cc6f00;
+}
+
+.footer {
+  width: 100%;
+  padding: 128px 0;
+  background-color: #333333;
+}
+.footer .container .footerBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer .container .footerBox .footerCard {
+  width: 380px;
+  padding: 0 15px;
+}
+.footer .container .footerBox .footerCard h6 {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 0 24px;
+  font-weight: 400;
+}
+.footer .container .footerBox .footerCard p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  margin: 0 0 20px;
+  line-height: 1.7;
+}
+.footer .container .footerBox .footerCard .footerNav {
+  margin: 0 0 16px;
+  color: #939393;
+}
+.footer .container .footerBox .footerCard .footerNav .footerNavItem {
+  margin: 0 0 10px;
+}
+.footer .container .footerBox .footerCard .footerNav .footerNavItem a {
+  font-size: 16px;
+  color: #939393;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+.footer .container .footerBox .footerCard .footerNav .footerNavItem a:hover {
+  transition: 0.3s all ease;
+  color: #cccccc;
+}
+.footer .container .footerBox .footerCard .subsForm {
+  margin: 0 0 48px;
+}
+.footer .container .footerBox .footerCard .subsForm .top {
+  width: 380px;
+  height: 55px;
+  position: relative;
+}
+.footer .container .footerBox .footerCard .subsForm .top .subsInput {
+  border-radius: 5px;
+  border: 1px solid #6c757d;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  background: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  width: 100%;
+  height: 55px;
+  outline: none;
+}
+.footer .container .footerBox .footerCard .subsForm .top .subsInput::-webkit-input-placeholder {
+  color: #939393;
+  font-size: 18px;
+}
+.footer .container .footerBox .footerCard .subsForm .top .subsBtn {
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100px;
+  height: 55px;
+  background: #ff8b00;
+  padding: 6px 12px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 0;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer .container .footerBox .footerCard .subsForm .top .subsBtn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 124, 6, 0.5);
+}
+.footer .container .footerBox .footerCard .subsForm .top .subsBtn:active {
+  background-color: #cc6f00;
+}
+.footer .container .footerBox .footerCard .footerSocial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .container .footerBox .footerCard .footerSocial h6 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 24px;
+}
+.footer .container .footerBox .footerCard .footerSocial .footerSoci {
+  display: flex;
+}
+.footer .container .footerBox .footerCard .footerSocial .footerSoci .sociItem {
+  padding: 0 16px;
+}
+.footer .container .footerBox .footerCard .footerSocial .footerSoci .sociItem:nth-child(1) {
+  padding-right: 16px;
+  padding-left: 0;
+}
+.footer .container .footerBox .footerCard .footerSocial .footerSoci .sociItem:nth-child(4) {
+  padding-right: 0;
+}
+.footer .container .footerBox .footerCard .footerSocial .footerSoci .sociItem a {
+  color: #b8b8b8;
+  transition: 0.3s all ease;
+}
+.footer .container .footerBox .footerCard .footerSocial .footerSoci .sociItem a:hover {
+  color: #ffffff;
+}
+.footer .container .colorlib {
+  margin: 48px -15px 0;
+  padding: 48px 0 0;
+  border-top: #545b62 solid 1px;
+  display: flex;
+  justify-content: center;
+}
+.footer .container .colorlib .copyright {
+  font-size: 12.8px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+.footer .container .colorlib .copyright span {
+  color: #dc3545;
+}
+.footer .container .colorlib .copyright a {
+  color: #939393;
+  transition: 0.3s all ease;
+}
+.footer .container .colorlib .copyright a:hover {
+  color: #cccccc;
+}/*# sourceMappingURL=main.css.map */
