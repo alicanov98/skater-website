@@ -29,10 +29,16 @@
               <a class="active" href="#home">Home</a>
             </li>
             <li class="navItem"><a href="#services">Services</a></li>
-            <li class="navItem">
+            <li class="navItem aboutItem">
               <a href="#about"
                 >About <i class="fa-solid fa-angle-down downArrow"></i
               ></a>
+              <ul class="dropDown">
+                <li class="dropItem"><a href="#team">Team</a></li>
+                <li class="dropItem"><a href="#session">Pricing</a></li>
+                <li class="dropItem"><a href="#ask">FAQ</a></li>
+                <li class="dropItem"><a href="./home.html">More Links </a></li>
+              </ul>
             </li>
             <li class="navItem">
               <a href="#testimonials">Testimonials</a>
@@ -167,7 +173,7 @@
               <div class="cardImage">
                 <img src="./assets/images/homeBg.webp" alt="" />
               </div>
-              <div class="cardInfoTab" style="padding-left: 140px;">
+              <div class="cardInfoTab" style="padding-left: 140px">
                 <h2 class="cardTitle">My Best Performance</h2>
                 <p class="cardDesc">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -188,8 +194,8 @@
                 </ul>
               </div>
             </div>
-            <div class="carding"  style="margin-top: 8px;">
-              <div class="cardInfoTab" style="padding-right: 140px;">
+            <div class="carding" style="margin-top: 8px">
+              <div class="cardInfoTab" style="padding-right: 140px">
                 <h2 class="cardTitle">My Best Performance</h2>
                 <p class="cardDesc">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -257,7 +263,7 @@
       </section>
       <!-- About Section End -->
       <!-- Team Section Start -->
-      <section class="team">
+      <section class="team" id="team">
         <div class="container">
           <div class="blog">
             <h2>OUR TEAM</h2>
@@ -345,7 +351,7 @@
       </section>
       <!-- Team Section End -->
       <!-- SESSION Section Start -->
-      <section class="session">
+      <section class="session" id="session">
         <div class="container">
           <div class="sessionTop">
             <div class="sessionTitle">
@@ -409,7 +415,7 @@
               </div>
             </div>
           </div>
-          <div class="ask">
+          <div class="ask" id="ask">
             <div class="askTitle">
               <h2>FREQUENTLY ASK QUESTIONS</h2>
             </div>
@@ -602,12 +608,22 @@
           <div class="cardBox">
             <form class="formCon">
               <div class="first">
-                  <input class="firstname" type="text" placeholder="First Name" required/>
-                  <input class="surname" type="text" placeholder="Last Name" required/>
+                <input
+                  class="firstname"
+                  type="text"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  class="surname"
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                />
               </div>
               <div class="emailAdress">
                 <div class="adress">
-                  <input type="text" placeholder="Email address" required/>
+                  <input type="text" placeholder="Email address" required />
                 </div>
               </div>
               <div class="youmMessage">
